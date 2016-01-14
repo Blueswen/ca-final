@@ -1,14 +1,446 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Computer Animation Final Project</title>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta property="og:title" content="KUMAMON與禪師的智慧" />
+    	<meta property="og:type" content="website" />
+    	<meta property="og:url" content="http://blueswen.github.io/ca-final" />
+    	<meta property="og:image" content="img/ogimage.png" />
+    	<meta property="og:site_name" content="電腦動畫期末專案 — KUMAMON與禪師的智慧"/>
+    	<meta property="og:description" content="一段充滿奮鬥與努力的勵志故事！"/>
+      <title>Computer Animation Final Project</title>
+      <!-- Bootstrap Core CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-    
-  </body>
-</html>
+      <!-- Custom Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+      <!-- Plugin CSS -->
+      <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <style media="screen">
+        .auto-resizable-iframe {
+          padding: 30px auto 0px;
+        }
+
+        .auto-resizable-iframe > div {
+          position: relative;
+          padding-bottom: 75%;
+          height: 0px;
+        }
+
+        .auto-resizable-iframe iframe {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+        }
+
+        .tool-icon {
+          width: 50%;
+
+        }
+
+        .music-p {
+          padding: 20px 20px;
+        }
+
+        .portfolio-box {
+          cursor: default;
+        }
+
+        .bg-grey {
+          background: #e7e7e7;
+          padding: 30px 0;
+        }
+
+        .ac {
+          margin-top: 50px;
+        }
+
+        .ac p {
+          font-size: 20px;
+          margin-top: 30%;
+        }
+
+        .ac-img {
+          width: 60%;
+          margin: 20%;
+        }
+
+        @media (max-width: 768px) {
+          .ac p {
+            margin-top: 30px;
+          }
+          .ac-img {
+            margin: 30px 20%;
+          }
+        }
+      </style>
+    </head>
+    <body id="page-top">
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">KUMAMON 與禪師的智慧</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#about">關於</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#video">影片</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#tool">使用工具</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#meterial">設計資料</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#music">使用音樂</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#acknowledgement">致謝</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1>一段充滿奮鬥與努力的勵志故事</h1>
+                    <hr>
+                    <p>對人生充滿失望的KUMAMON，在得到了禪師的指點後，是否能夠擺脫魯蛇的一生呢？</p>
+                    <a href="#about" class="btn btn-primary btn-xl page-scroll">繼續看下去</a>
+                </div>
+            </div>
+        </header>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2 class="section-heading">關於</h2>
+                        <hr class="primary">
+                        <p>
+                          本作品為國立政治大學資訊科學所李蔡彥老師所開設的電腦動畫期末專案
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2 text-center">
+                      <img src="img/liu.jpg" alt="" class="img-circle" width="70%" style="margin:5% 15%"/>
+                      <h3>
+                        作者
+                      </h3>
+                      <p style="font-size:18px;letter-spacing:1px;color:#51555A;">
+                        劉義瑋
+                      </p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <img src="img/li.jpg" alt="" class="img-circle" width="70%" style="margin:5% 15%"/>
+                      <h3>
+                        指導教授
+                      </h3>
+                      <p style="font-size:18 px;letter-spacing:1px;color:#51555A;">
+                        李蔡彥
+                      </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-primary" id="video" style="padding:50px 0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                      <div class="auto-resizable-iframe">
+                        <div>
+                            <iframe src="https://www.youtube.com/embed/_dHZjb8ED_M" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="container text-center" style="padding-top:50px">
+                    <div class="call-to-action">
+                        <a href="http://imlab3.cs.nccu.edu.tw/~104753013/file/Final/Final.mp4" class="btn btn-default btn-xl wow tada" style="font-size:24px">下載影片</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tool">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">使用工具</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <img class="wow bounceIn tool-icon" src="img/blender.png" alt="" />
+                            <!-- <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i> -->
+                            <h3>Blender</h3>
+                            <p class="text-muted">建模與動畫設計</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <img class="wow bounceIn tool-icon" src="img/ae.png" alt=""  data-wow-delay=".1s"/>
+                            <!-- <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i> -->
+                            <h3>After Effect</h3>
+                            <p class="text-muted">片頭動畫製作</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <img class="wow bounceIn tool-icon" src="img/powerdirector.png" alt=""  data-wow-delay=".2s"/>
+                            <!-- <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i> -->
+                            <h3>Power Director</h3>
+                            <p class="text-muted">影片剪接</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                            <img class="wow bounceIn tool-icon" src="img/powerpoint.png" alt=""  data-wow-delay=".3s"/>
+                            <!-- <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i> -->
+                            <h3>Power Point</h3>
+                            <p class="text-muted">簡易動畫製作</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="no-padding" id="meterial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">設計資料</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row no-gutter">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="" class="portfolio-box">
+                            <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Designed by 蔡雯琪
+                                    </div>
+                                    <div class="project-name">
+                                        VIPL Logo
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="" class="portfolio-box">
+                            <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-name">
+                                        Story Board
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="" class="portfolio-box">
+                            <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-name">
+                                      時程規劃
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="" class="portfolio-box">
+                            <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-name">
+                                      Scene 3
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="" class="portfolio-box">
+                            <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-name">
+                                        期末報告簡報
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="" class="portfolio-box">
+                            <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-name">
+                                        期末報告簡報
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="bg-dark">
+            <div class="container text-center">
+                <div class="call-to-action">
+                    <a href="http://imlab3.cs.nccu.edu.tw/~104753013/file/final.rar" class="btn btn-default btn-xl wow tada" style="font-size:24px">下載設計資料</a>
+                </div>
+            </div>
+        </aside>
+
+
+
+        <section id="music">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2 class="section-heading">使用音樂</h2>
+                      <hr class="primary">
+                  </div>
+              </div>
+          </div>
+            <div class="container">
+                <div class="row text-center">
+                  <div class="col-lg-4 music-p">
+                    <h3><a href="https://www.youtube.com/watch?v=ZF5Mtvp6BK0" target="_blank">森林背景</a></h3>
+                    <p>
+                      高品質錄製的蟲鳴與鳥叫，讓人彷彿真的置身於KUMAMON和禪師所在的深山中。
+                    </p>
+                  </div>
+                  <div class="col-lg-4 music-p">
+                    <h3><a href="https://www.youtube.com/watch?v=lF1NgUy10I4" target="_blank">超級瑪莉歐</a></h3>
+                    <p>
+                      主背景音樂選用鋼琴變奏版的超級瑪莉歐主題曲，呼應著KUMAMON如同超級馬里歐一樣不停挑戰人生的難關。
+                    </p>
+                  </div>
+                  <div class="col-lg-4 music-p">
+                    <h3><a href="https://www.youtube.com/watch?v=K4tf8fBBHZM" target="_blank">いきなり！黄金伝説－煮菜歌</a></h3>
+                    <p>
+                      日本朝日電視台製作的綜藝節目「いきなり！黄金伝説」中煮菜時的常用配樂，簡單的旋律能夠讓人感受到煮菜時的歡愉。
+                    </p>
+                  </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-lg-6 music-p">
+                    <h3><a href="https://www.youtube.com/watch?v=A_chS1kxhZY" target="_blank">土耳其進行曲</a></h3>
+                    <p>
+                      莫札特的地１１號鋼琴奏鳴曲的第三樂章，因題為「土耳其風格的迴旋曲」而得名「土耳其進行曲」，無論在古典或流行樂都經常被多次引用，其輕快略帶緊張的旋律非常適合用於角色跑動時的配樂。
+                    </p>
+                  </div>
+                  <div class="col-lg-6 music-p">
+                    <h3><a href="https://www.youtube.com/watch?v=jJxkqAOXW1o" target="_blank">海海人生</a></h3>
+                    <p>
+                      由陳盈潔演唱的海海人生，改變自粵語歌曲《沈默是金》，歌詞敘述無法兩情相悅最後只能看開的悲傷，富有情緒感染力的台語歌聲能將最後的結局帶向高潮，與前面所選歌曲的曲調風格驟變更能凸顯其悲傷感。
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acknowledgement">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 text-center">
+                      <h2 class="section-heading">致謝</h2>
+                      <hr class="primary">
+                  </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-lg-4 col-lg-offset-2">
+                    <img src="img/yt.jpg" alt="" class="img-thumbnail ac-img"/>
+                  </div>
+                  <div class="col-lg-4 ac">
+                    <p>感謝黃彥庭提供劇情發想</p>
+                  </div>
+                </div>
+                <!-- <div class="row text-center">
+                  <div class="col-lg-4 col-lg-offset-2 ac">
+                    <p>感謝神秘人熱情專業配音</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="img/yt.jpg" alt="" class="img-thumbnail ac-img"/>
+                  </div>
+                </div> -->
+            </div>
+        </section>
+
+        <aside class="bg-grey">
+            <div class="container text-center">
+              <p style="font-size:16px;letter-spacing:1px;color:#51555A;margin:10px;">
+                2015 Computer Animation Final Project At NCCU
+              </p>
+              <p style="font-size:16px;letter-spacing:1px;color:#51555A;margin:10px;">
+                Template Powered by <a href="http://startbootstrap.com/template-overviews/creative/" target="_blank">Creative</a>
+              </p>
+            </div>
+        </aside>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js/creative.js"></script>
+
+    </body>
+  </html>
